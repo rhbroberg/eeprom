@@ -10,9 +10,8 @@
 
 #include "cfmanLib.h"
 
-#include "eeprom/manager.h"
+#include "eeprom/Manager.h"
 #include "eeprom/PersistentByte.h"
-//#include "eeprom/PersistentLong.h"
 #include "eeprom/Persistent.h"
 
 eeprom::Manager myMan;
