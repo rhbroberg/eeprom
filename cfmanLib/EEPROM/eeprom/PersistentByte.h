@@ -14,7 +14,7 @@ public:
 
 	void setValue(void *buf, const VMUINT length);
 	void getValue(void *buf, VMUINT *length);
-	void *getString();
+	const char *getString();
 	void setString(const char *str);
 	virtual const VMUINT size() const;
 	virtual void setDefault();

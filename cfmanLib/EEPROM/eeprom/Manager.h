@@ -1,6 +1,6 @@
 #pragma once
 
-#include <unordered_map>
+#include <map>
 
 #include "eeprom/PersistentStorage.h"
 
@@ -21,7 +21,7 @@ public:
 protected:
 	const bool create();
 
-	std::unordered_map<std::string, PersistentStorage *> _map;
+	std::map<std::string, PersistentStorage *> _map;
 	VMUINT _available;
 };
 

@@ -46,14 +46,14 @@ PersistentByte::getValue(void *buf, VMUINT *length)
 	*length = _size;
 }
 
-void *
+const char *
 PersistentByte::getString()
 {
 	if (!initialized())
 	{
 		read((void *)_buf, _size);
 	}
-	return _buf;
+	return (const char *)_buf;
 }
 
 void

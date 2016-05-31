@@ -19,6 +19,7 @@ public:
 
 	void setValue(const T value)
 	{
+		// fix: invalid for strings
 		if (value != _value)
 		{
 			_value = value;
